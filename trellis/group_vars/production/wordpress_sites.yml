@@ -3,11 +3,11 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  ourmarae.com:
+  v2.ourmarae.com:
     site_hosts:
-      - canonical: ourmarae.com
+      - canonical: v2.ourmarae.com
         redirects:
-          - www.ourmarae.com
+          - www.v2.ourmarae.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:tareiking/ourmarae-v2.git
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
@@ -15,7 +15,7 @@ wordpress_sites:
     multisite:
       enabled: true
     ssl:
-      enabled: true
+      enabled: false
       provider: letsencrypt
     cache:
       enabled: true
