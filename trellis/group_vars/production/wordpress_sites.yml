@@ -6,8 +6,6 @@ wordpress_sites:
   v2.ourmarae.com:
     site_hosts:
       - canonical: v2.ourmarae.com
-        redirects:
-          - www.v2.ourmarae.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:tareiking/ourmarae-v2.git
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
