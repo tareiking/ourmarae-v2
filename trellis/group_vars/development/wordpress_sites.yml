@@ -13,6 +13,7 @@ wordpress_sites:
     admin_email: tareiking@gmail.com
     multisite:
       enabled: true
+      subdomains: true
     ssl:
       enabled: false
       provider: self-signed

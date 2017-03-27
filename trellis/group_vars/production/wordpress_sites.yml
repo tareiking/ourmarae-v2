@@ -12,6 +12,7 @@ wordpress_sites:
     branch: master
     multisite:
       enabled: true
+      subdomains: true
     ssl:
       enabled: true
       provider: letsencrypt
